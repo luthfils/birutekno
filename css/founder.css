@@ -1,0 +1,293 @@
+.ch-grid {
+    margin: 0.9375rem 0 0 0;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%}
+.ch-grid:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.ch-grid li {
+    width: 10.3125rem;
+    height: 10.3125rem;
+    display: inline-block;
+    margin: 0.625rem;
+}
+.ch-item {
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+.ch-item:before {
+    content: '';
+    display: table;
+}
+.ch-item .ch-info-front {
+    z-index: 1000;
+}
+.ch-item:hover .ch-info-wrap {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8);
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+.ch-item:hover .ch-info-front {
+    -webkit-transform: translateZ(1px) rotate3d(0,  1,  0,  -180deg);
+    -moz-transform: translateZ(1px) rotate3d(0,  1,  0,  -180deg);
+    -o-transform: translateZ(1px) rotate3d(0,  1,  0,  -180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.ch-item:hover .ch-info-back {
+    -webkit-transform: translateZ(1px) rotate3d(0,  1,  0,  0deg);
+    -moz-transform: translateZ(1px) rotate3d(0,  1,  0,  0deg);
+    -o-transform: translateZ(1px) rotate3d(0,  1,  0,  0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background: #000;
+    z-index: 1001;
+}
+.ch-item:hover .linkedin-square {
+    visibility: visible;
+    opacity: 1;
+}
+.ch-item:hover .linkedin-square:before {
+    visibility: visible;
+    opacity: 1;
+}
+.ch-item:hover .linkedin-square:after {
+    visibility: visible;
+    opacity: 1;
+}
+.ch-info-wrap {
+    position: absolute;
+    width: 8.4375rem;
+    height: 8.4375rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    top: 0.9375rem;
+    left: 0.9375rem;
+    background: #f9f9f9 url(../img/bg.jpg);
+    -webkit-box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, 0.3), inset 0 0 0.1875rem rgba(115, 114, 23, 0.8);
+    -moz-box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, 0.3), inset 0 0 0.1875rem rgba(115, 114, 23, 0.8);
+    box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, 0.3), inset 0 0 0.1875rem rgba(115, 114, 23, 0.8);
+}
+.ch-info {
+    position: absolute;
+    width: 8.4375rem;
+    height: 8.4375rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.ch-info .ch-info-front {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ch-info .ch-info-back {
+    -webkit-transform: rotate3d(0,  1,  0,  180deg);
+    -moz-transform: rotate3d(0,  1,  0,  180deg);
+    -o-transform: rotate3d(0,  1,  0,  180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    background: #000;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ch-info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    font-size: 1rem;
+    margin: 0 1.25rem 0.375rem;
+    padding: 1.25rem 0 0 0;
+    font-family: "bariol-thin",  "Helvetica Neue",  "Helvetica",  Helvetica,  Arial,  sans-serif;
+    line-height: 1.25rem;
+    text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.webkit-text-stroke .ch-info h3 {
+    -webkit-text-stroke: 0.35px;
+}
+.ch-info .linkedin-square {
+    visibility: hidden;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/social_sprite.png);
+    background-position: left bottom;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.4s;
+    -webkit-transition-delay: ease-in-out;
+    -moz-transition: opacity 0.3s 0.4s ease-in-out;
+    -o-transition: opacity 0.3s 0.4s ease-in-out;
+    transition: opacity 0.3s 0.4s ease-in-out;
+}
+.ch-info .linkedin-square:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    left: -35px;
+    top: 50%;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.4s;
+    -webkit-transition-delay: ease-in-out;
+    -moz-transition: opacity 0.3s 0.4s ease-in-out;
+    -o-transition: opacity 0.3s 0.4s ease-in-out;
+    transition: opacity 0.3s 0.4s ease-in-out;
+}
+.ch-info .linkedin-square:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    right: -35px;
+    top: 50%;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.4s;
+    -webkit-transition-delay: ease-in-out;
+    -moz-transition: opacity 0.3s 0.4s ease-in-out;
+    -o-transition: opacity 0.3s 0.4s ease-in-out;
+    transition: opacity 0.3s 0.4s ease-in-out;
+}
+.ch-info .linkedin-square:hover {
+    background-position: -16px bottom;
+}
+.ch-info .linkedin-square a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-indent: -9999px;
+}
+.ch-info p {
+    color: #fff;
+    line-height: 1.2;
+    padding: 0.3125rem 0.3125rem;
+    font-style: italic;
+    margin: 0 0.625rem;
+    font-size: 0.875rem;
+    font-family: "bariol-thin",  "Helvetica Neue",  "Helvetica",  Helvetica,  Arial,  sans-serif;
+}
+.ch-info p a {
+    display: block;
+    color: #fff;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.5625rem;
+    letter-spacing: 1px;
+    padding-top: 0.25rem;
+    font-family: "bariol-regular",  "Helvetica Neue",  "Helvetica",  Helvetica,  Arial,  sans-serif;
+}
+.ch-info p a:hover {
+    color: #fff222;
+}
+.ch-info>div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-position: center center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ch-img-1 {
+    background-image: url(../images/s01.png);
+    
+}
+.ch-img-2 {
+    background-image: url(../images/jimmy.jpg);
+}
+.ch-img-4 {
+    background-image: url(../images/s03.png);
+}
+.ch-img-5 {
+    background-image: url(../img/adit.jpg);
+}
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+    outline: none;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
